@@ -18,13 +18,13 @@ The application allows the user to view and modify the data even after closing a
 ## Screenshots
 
 ### Home
-![Home](./resources/imgs/designScreens/Home.png)
+![Home](./resources/imgs/Home.png)
 
 ### Acoes Pesquisa
-![Search Actions](./resources/imgs//designScreens/AcoesPesquisa.png)
+![Search Actions](./resources/imgs/AcoesPesquisa.png)
 
 ### AgradecimentoParticiapcao
-![Agradecimento Participacao](./resources/imgs//designScreens/AgradecimentoParticipacao.png)
+![Agradecimento Participacao](./resources/imgs/AgradecimentoParticipacao.png)
 
 
 ## Usage
