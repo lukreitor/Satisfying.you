@@ -1,0 +1,2 @@
+# Satisfying.you
+ Este projeto oferece uma solução web abrangente para a vital tarefa de avaliar a satisfação dos clientes em relação a produtos e serviços de uma corporação. Com recursos que abrangem desde a gestão de usuários até a criação de pesquisas personalizadas e a produção de relatórios gráficos, nossa aplicação torna a coleta e análise de dados de satisfação simples e eficaz. Ajude-nos a capacitar empresas a aprimorar continuamente suas ofertas e a fortalecer o relacionamento com os clientes, participando deste projeto significativo.
