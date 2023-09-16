@@ -18,19 +18,14 @@ The application allows the user to view and modify the data even after closing a
 ## Screenshots
 
 ### Home
-![Main Window](./resources/imgs/home.png)
+![Home](./resources/imgs/designScreens/Home.png)
 
-### Trainer Management Window
-![Trainer Management Window](trainer.png)
+### Acoes Pesquisa
+![Search Actions](./resources/imgs//designScreens/AcoesPesquisa.png)
 
-### Client Management Window
-![Client Management Window](client.png)
+### AgradecimentoParticiapcao
+![Agradecimento Participacao](./resources/imgs//designScreens/AgradecimentoParticipacao.png)
 
-### Manager Management Window
-![Manager Management Window](manager.png)
-
-### System Folders
-![System Folders](Sistema_Pastas.jpeg)
 
 ## Usage
 
