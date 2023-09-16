@@ -35,13 +35,17 @@ The application allows the user to view and modify the data even after closing a
 
 ## Usage
 
-1. Clone the repository to your local machine.
-2. Create a new  project in your Java IDE.
-3. Add the content of the src folder to your src folder in the new project
-4. Build and run the application.
-5. Use the main window to navigate to the data management windows.
-6. Perform CRUD operations as needed.
-7. Modify as you want
+
+1. Clone the repository: On GitHub, click the "Code" button and copy the repository's URL. Then, in the terminal, use the command git clone REPOSITORY_URL to clone the repository to your local machine. 
+
+2. Open the project: Use your preferred code editor (such as VSCode, Sublime Text, etc.) to open the cloned project folder.
+
+3. Run the project: Since your project consists only of HTML and CSS, you can simply open the main HTML file (usually named index.html) in a web browser. Just right-click the file and select "Open with" in your chosen browser.
+
+4. View the website: The website should now be displayed in your browser, allowing you to view and interact with it locally.
+
+5. Make modifications (optional): If you wish to make changes to the project, you can edit the HTML and CSS files directly in your code editor. Updates will be reflected when you refresh the page in the browser.
+
 
 ## Contributing
 
@@ -106,7 +110,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgements
 
-Special thanks to UTFPR, Prof Fabrício Martins for all the learning.
+Special thanks to UTFPR, Prof Henrique Y. Shishido for all the learning.
 
 
 
