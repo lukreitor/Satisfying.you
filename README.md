@@ -18,7 +18,7 @@ The application allows the user to view and modify the data even after closing a
 ## Screenshots
 
 ### Home
-![Main Window](resources/imgs/home.png)
+![Main Window](resources/imgs/Home.png)
 
 ### Trainer Management Window
 ![Trainer Management Window](trainer.png)
