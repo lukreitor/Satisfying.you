@@ -1,0 +1,178 @@
+<!-- Descrição geral do projeto
+A pesquisa de satisfação é essencial para entender como os clientes de uma corporação se sentem em relação à empresa. Por meio dos dados coletados, a empresa pode realizar melhorias em seu processo, pessoas e/ou produtos/serviços.
+Nesse sentido, é proposto nesta disciplina o desenvolvimento de uma aplicação web para realizar pesquisas com clientes/usuários de uma corporação.
+Os requisitos gerais do projeto são:
+Gestão de usuários: cadastro e autenticação de usuários, e recuperação de senha;
+Gestão de pesquisas: cada usuário poderá gerenciar diferentes pesquisas de produtos/serviços;
+Coleta da satisfação do usuário;
+Produção de relatórios gráficos por pesquisa.
+
+
+Projeto Satisfying.you - Parte 1
+Tendo em vista esses requisitos, desenvolva uma aplicação web para pesquisa de satisfação utilizando: HTML, CSS, formulários HTML, Flexbox/GridLayout e Tags semântica. Lembrando que na parte 1 do projeto não é necessário armazenar qualquer dado inserido no navegador. Siga o protótipo disponível em Figma (clique aqui).
+Os critérios avaliativos da Parte 1 e suas respectivas pontuações estão listados abaixo:
+
+Critério 1 (9,0). Elaboração de todas as páginas do aplicativo seguindo o layout e cores do protótipo (10 telas), incluindo:
+Index
+NovaConta
+RecuperarSenha
+Home
+NovaPesquisa
+ModificarPesquisa
+AcoesPesquisa
+Relatorio
+Coleta
+AgradecimentoParticipacao
+
+-->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            author="Lucas Martins da Silva Sena | Jessica Mota | Gustavo Camargo"
+        />
+        <meta
+            description=" Este projeto oferece uma solução web abrangente para a vital tarefa de avaliar a satisfação dos clientes em relação a produtos e serviços de uma corporação. Com recursos que abrangem desde a gestão de usuários até a criação de pesquisas personalizadas e a produção de relatórios gráficos, nossa aplicação torna a coleta e análise de dados de satisfação simples e eficaz. Ajude-nos a capacitar empresas a aprimorar continuamente suas ofertas e a fortalecer o relacionamento com os clientes, participando deste projeto significativo."
+        />
+        <meta
+            keywords="satisfying.you, pesquisa, satisfação, cliente, corporação, gestão, usuários, produtos, serviços, relatórios, gráficos, coleta, dados, análise, ofertas, relacionamento, clientes, projeto, significativo"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <title>Satisfying.you</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Roboto', sans-serif;
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #333;
+                background-color: #372775;
+            }
+
+            header {
+                background-color: #2b1d62;
+                padding: 1rem;
+            }
+
+            header h1 {
+                font-size: 2.4rem;
+                font-weight: 400;
+                color: #fff;
+            }
+
+            nav {
+                display: flex;
+                align-items: center;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 1.5rem;
+                margin-right: 1rem;
+            }
+
+            nav a:hover {
+                color: #666;
+            }
+
+            h1 {
+                font-size: 3rem;
+                color: #fff;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            .container {
+                width: 80%;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr; /* Divide a página em duas colunas de tamanho igual */
+                gap: 16px; /* Espaço entre as colunas */
+            }
+
+            .half {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .checkboxes {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            /* Estilos adicionais conforme necessário */
+        </style>
+    </head>
+    <body>
+        <!-- using the best semantic i need a navbar that will have an icon arron pointing to left and the title Nova Pesquisa-->
+        <!--get the icon from bootstrap 5.0.1-->
+        <header>
+            <nav>
+                <a href="Home.html" title="Voltar para a página inicial"
+                    ><img
+                        src="../resources/imgs/arrow_back.png"
+                        alt="Voltar para a página inicial"
+                /></a>
+                <h1>Relatório</h1>
+            </nav>
+        </header>
+
+        <div class="contaienr">
+            <main class="grid-container">
+                <section class="half">
+                    <img
+                        src="../resources/imgs/pie-chart-1.png"
+                        alt="Gráfico de pizza"
+                    />
+                </section>
+                <section class="half">
+                    <form class="checkboxes">
+                        <div>
+                            <input
+                                type="checkbox"
+                                name="excelente"
+                                id="excelente"
+                            />
+                            <label for="excelente">Excelente</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="bom" id="bom" />
+                            <label for="bom">Bom</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="neutro" id="neutro" />
+                            <label for="neutro">Neutro</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ruim" id="ruim" />
+                            <label for="ruim">Ruim</label>
+                        </div>
+                        <div>
+                            <input
+                                type="checkbox"
+                                name="pessimo"
+                                id="pessimo"
+                            />
+                            <label for="pessimo">Péssimo</label>
+                        </div>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

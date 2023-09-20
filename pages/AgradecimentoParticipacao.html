@@ -1,0 +1,85 @@
+<!-- Descrição geral do projeto
+A pesquisa de satisfação é essencial para entender como os clientes de uma corporação se sentem em relação à empresa. Por meio dos dados coletados, a empresa pode realizar melhorias em seu processo, pessoas e/ou produtos/serviços.
+Nesse sentido, é proposto nesta disciplina o desenvolvimento de uma aplicação web para realizar pesquisas com clientes/usuários de uma corporação.
+Os requisitos gerais do projeto são:
+Gestão de usuários: cadastro e autenticação de usuários, e recuperação de senha;
+Gestão de pesquisas: cada usuário poderá gerenciar diferentes pesquisas de produtos/serviços;
+Coleta da satisfação do usuário;
+Produção de relatórios gráficos por pesquisa.
+
+
+Projeto Satisfying.you - Parte 1
+Tendo em vista esses requisitos, desenvolva uma aplicação web para pesquisa de satisfação utilizando: HTML, CSS, formulários HTML, Flexbox/GridLayout e Tags semântica. Lembrando que na parte 1 do projeto não é necessário armazenar qualquer dado inserido no navegador. Siga o protótipo disponível em Figma (clique aqui).
+Os critérios avaliativos da Parte 1 e suas respectivas pontuações estão listados abaixo:
+
+Critério 1 (9,0). Elaboração de todas as páginas do aplicativo seguindo o layout e cores do protótipo (10 telas), incluindo:
+Index
+NovaConta
+RecuperarSenha
+Home
+NovaPesquisa
+ModificarPesquisa
+AcoesPesquisa
+Relatorio
+Coleta
+AgradecimentoParticipacao
+
+-->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            author="Lucas Martins da Silva Sena | Jessica Mota | Gustavo Camargo"
+        />
+        <meta
+            description=" Este projeto oferece uma solução web abrangente para a vital tarefa de avaliar a satisfação dos clientes em relação a produtos e serviços de uma corporação. Com recursos que abrangem desde a gestão de usuários até a criação de pesquisas personalizadas e a produção de relatórios gráficos, nossa aplicação torna a coleta e análise de dados de satisfação simples e eficaz. Ajude-nos a capacitar empresas a aprimorar continuamente suas ofertas e a fortalecer o relacionamento com os clientes, participando deste projeto significativo."
+        />
+        <meta
+            keywords="satisfying.you, pesquisa, satisfação, cliente, corporação, gestão, usuários, produtos, serviços, relatórios, gráficos, coleta, dados, análise, ofertas, relacionamento, clientes, projeto, significativo"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <title>Satisfying.you</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Roboto', sans-serif;
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #333;
+                background-color: #372775;
+            }
+
+            div.container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            div.container h1 {
+                font-size: 3rem;
+                color: #fff;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- this should be in the center of the page vertical and horizontal using flexbox -->
+
+        <div class="container">
+            <h1>Obrigado por Participar da pesquisa!</h1>
+            <h1>Aguardamos você no próximo ano!</h1>
+        </div>
+    </body>
+</html>

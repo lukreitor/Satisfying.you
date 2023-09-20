@@ -42,6 +42,169 @@ AgradecimentoParticipacao
         <meta name="robots" content="index, follow" />
 
         <title>Satisfying.you</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Roboto', sans-serif;
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #333;
+                background-color: #372775;
+            }
+
+            header {
+                background-color: #2b1d62;
+                padding: 1rem;
+            }
+
+            header h1 {
+                font-size: 2.4rem;
+                font-weight: 400;
+                color: #fff;
+            }
+
+            nav {
+                display: flex;
+                align-items: center;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 1.5rem;
+                margin-right: 1rem;
+            }
+
+            nav a:hover {
+                color: #666;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: #fff;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                /*background-color: #fff; */
+                padding: 1rem;
+                margin: 1rem;
+            }
+
+            form div {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1rem;
+            }
+
+            form div label {
+                font-size: 1.5rem;
+                font-weight: 400;
+                margin-bottom: 0.5rem;
+                color: #fff;
+            }
+
+            form div input {
+                padding: 0.5rem;
+                border: 1px solid #333;
+                border-radius: 0.25rem;
+                font-size: 1rem;
+            }
+
+            form div input.imagem {
+                padding: 0.5rem;
+                border: 1px solid #333;
+                border-radius: 0.25rem;
+                font-size: 1rem;
+                background-color: #fff;
+                color: #333;
+                cursor: pointer;
+                width: 60%;
+                height: 5rem;
+            }
+
+            form div span {
+                font-size: 0.75rem;
+                color: #fd7979;
+            }
+
+            form div input:focus {
+                outline: none;
+                border-color: #2b1d62;
+            }
+
+            form div button {
+                padding: 0.5rem;
+                height: 3.5rem;
+                border: none;
+                border-radius: 0.25rem;
+                font-size: 1rem;
+                background-color: #37bd6d;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            form div button:hover {
+                background-color: #2b1d62;
+            }
+
+            @media (min-width: 768px) {
+                form {
+                    width: 80%;
+                    margin: 1rem auto;
+                }
+            }
+        </style>
     </head>
-    <body></body>
+    <body>
+        <!-- using the best semantic i need a navbar that will have an icon arron pointing to left and the title Nova Pesquisa-->
+        <!--get the icon from bootstrap 5.0.1-->
+        <header>
+            <nav>
+                <a href="Home.html" title="Voltar para a página inicial"
+                    ><img
+                        src="../resources/imgs/arrow_back.png"
+                        alt="Voltar para a página inicial"
+                /></a>
+                <h1>Nova Pesquisa</h1>
+            </nav>
+        </header>
+        <div class="container">
+            <form action="Coleta.html" method="POST">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="" />
+                    <span>Preencha no nome da pesquisa</span>
+                </div>
+                <div>
+                    <label for="data">Data</label>
+                    <input type="date" name="data" id="data" placeholder="" />
+                    <span>Preencha a data</span>
+                </div>
+
+                <div>
+                    <label for="imagem">Imagem</label>
+                    <input
+                        class="imagem"
+                        type="file"
+                        name="imagem"
+                        id="imagem"
+                        accept="image/*"
+                        onchange="document.getElementById('imagem').innerHTML = this.files.length > 0 ? 'Texto' : 'Nenhum arquivo selecionado';"
+                    />
+                </div>
+                <div>
+                    <button type="submit">CADASTRAR</button>
+                </div>
+            </form>
+        </div>
+    </body>
 </html>
