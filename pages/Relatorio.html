@@ -93,26 +93,61 @@ AgradecimentoParticipacao
             }
 
             .container {
-                width: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
             }
 
-            .grid-container {
-                display: grid;
-                grid-template-columns: 1fr 1fr; /* Divide a página em duas colunas de tamanho igual */
-                gap: 16px; /* Espaço entre as colunas */
+            main {
+                display: flex;
+                width: 100%; /* Garante que o main ocupe todo o espaço disponível horizontalmente */
             }
 
-            .half {
+            section:first-child {
+                flex: 1; /* A primeira seção ocupará 50% do espaço disponível */
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-end; /* Alinhamento à direita */
+                padding: 10px; /* Espaçamento entre as seções */
+            }
+
+            section:last-child {
+                flex: 1; /* A segunda seção ocupará 50% do espaço disponível */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start; /* Alinhamento à esquerda */
+                padding: 10px; /* Espaçamento entre as seções */
+                padding-left: 60px;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto; /* Manter a proporção da imagem */
             }
 
             .checkboxes {
                 display: flex;
-                flex-direction: column;
-                gap: 8px;
+                flex-direction: column; /* Organizar os checkboxes em coluna */
+            }
+
+            .checkboxes div {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px; /* Espaçamento entre os checkboxes */
+            }
+
+            input[type='checkbox'] {
+                margin-right: 5px; /* Espaçamento entre o checkbox e a label */
+                width: 20px; /* Aumentar o tamanho dos checkboxes */
+                height: 20px;
+            }
+
+            label {
+                font-size: 16px;
+                color: #fff;
             }
 
             /* Estilos adicionais conforme necessário */
@@ -133,14 +168,14 @@ AgradecimentoParticipacao
         </header>
 
         <div class="contaienr">
-            <main class="grid-container">
-                <section class="half">
+            <main>
+                <section>
                     <img
                         src="../resources/imgs/pie-chart-1.png"
                         alt="Gráfico de pizza"
                     />
                 </section>
-                <section class="half">
+                <section>
                     <form class="checkboxes">
                         <div>
                             <input
