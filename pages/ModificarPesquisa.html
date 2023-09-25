@@ -170,18 +170,14 @@ AgradecimentoParticipacao
             }
 
             .delete-button {
-                margin-left: auto; /* Empurra o botão "Apagar" para a margem direita do form */
-                padding: 0.5rem;
+                margin-left: auto;
+                padding: 0;
                 border: none;
-                border-radius: 0.25rem;
+                background: none; /* Removendo o fundo */
                 font-size: 1rem;
-                background-color: #f44336;
                 color: #fff;
                 cursor: pointer;
-            }
-
-            form div button:hover {
-                background-color: #2b1d62;
+                outline: none; /* Removendo a borda de foco ao clicar */
             }
 
             @media (min-width: 768px) {
@@ -240,6 +236,8 @@ AgradecimentoParticipacao
                 <div class="button-container">
                     <button type="submit" class="save-button">SALVAR</button>
                 </div>
+
+                <!--another button apagar, i want a lata de lixo above the name Apagar -->
                 <button type="submit" class="delete-button">Apagar</button>
             </form>
         </div>
